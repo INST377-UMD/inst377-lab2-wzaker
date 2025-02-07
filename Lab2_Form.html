@@ -1,0 +1,65 @@
+<html>
+  <head>
+    <title>Hi! Let's be Friends!</title>
+    <style>
+      body {
+        background-color: rgb(245, 220, 255);
+        font-family: fantasy;
+      }
+
+      .input {
+        margin: 30px;
+      }
+
+      label {
+        font-size: 18px;
+      }
+      input[type="submit"] {
+        background-color: blueviolet;
+        color: white;
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+
+      input[type="submit"]:hover {
+        background-color: grey;
+        color: blueviolet;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Let's be Friends!!</h1>
+    <hr />
+    <form name="friends" method="get" action="Lab2_FormSuccess.html">
+      <div class="input">
+        <h3>What is your name?</h3>
+        <!-- Name -->
+        <label for="firstname">First Name:</label>
+        <input type="text" id="firstname" required />
+        <br />
+        <label for="lastname">Last Name:</label>
+        <input type="text" id="lastname" required />
+        <br />
+        <label for="nickname">Do you have a nickname?</label>
+        <input type="text" id="nickname" />
+        <br />
+        <hr />
+        <h3>Lets connect!</h3>
+        <label for="connect">How do you want to connect with me?</label>
+        <select name="connect" id="connect" required>
+          <option hidden disabled selected>-- Select Option --</option>
+          <option value="instagram">Instagram</option>
+          <option value="snapchat">Snapchat</option>
+          <option value="phone">Phone Number</option>
+        </select>
+        <br />
+        <label for="connect-box">Type in your username/phone-number</label>
+        <input type="text" id="connect-box" required />
+      </div>
+      <br />
+
+      <input type="submit" value="Yay! send me your info" />
+    </form>
+  </body>
+</html>
